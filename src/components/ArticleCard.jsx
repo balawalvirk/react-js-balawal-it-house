@@ -1,7 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import ArticleImage from "../assets/article-image.png";
 function ArticleCard() {
+  const navigate = useNavigate();
+
+  const handleGoToArticleDetails = (article) => {
+    navigate(`/article/id`);
+  };
   return (
-    <div className="bg-[#F5F5F5] p-[8px] rounded-[24px] ml-10 text-left">
+    <div
+      className="bg-[#F5F5F5] p-[8px] rounded-[24px] ml-10 text-left cursor-pointer project-card"
+      onClick={handleGoToArticleDetails}
+      // style={{width:'400px',flexGrow:''}}
+    >
       <img
         src={ArticleImage}
         className="rounded-[16px] article-card-image w-full"

@@ -51,7 +51,7 @@ function PartnersAndClients() {
 
   return (
     <section className="py-[60px] bg-[#F5F5F5]">
-      <h1 className="font-bold text-center text-[54px]">
+      <h1 className="font-semibold text-center text-[54px]">
         Our Partners & Clients
       </h1>
       <div className={`slider-container ${isScrolled ? "scrolled" : ""}`}>

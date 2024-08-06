@@ -1,6 +1,6 @@
 import TeamMember from "./TeamMember";
 
-function DevelopmentTeam() {
+function TechnicalSupportTeam() {
   const teamMembers = [
     { name: "Kurt Bates", role: "Full-stack Developer", image: "" },
     { name: "Jerry Helfer", role: "Frontend Developer", image: "" },
@@ -39,4 +39,4 @@ function DevelopmentTeam() {
   );
 }
 
-export default DevelopmentTeam;
+export default TechnicalSupportTeam;

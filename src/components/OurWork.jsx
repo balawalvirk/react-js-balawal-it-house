@@ -103,32 +103,37 @@ function OurWork() {
     }
   };
 
-  useEffect(() => {
-    const slider = sliderRef.current;
-    slider.addEventListener("scroll", handleScroll);
-    return () => {
-      slider.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const slider = sliderRef.current;
+  //   slider.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     slider.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
-    <section className="py-[120px]">
-      <h1 className="font-bold text-[40px] text-center">Our Work</h1>
+    <section className="py-[20px]">
+      <h1 className="font-semibold text-[40px] text-center">Our Work</h1>
       <div className="mt-16">
-        <div className={`slider-container ${isScrolled ? "scrolled" : ""}`}>
-          <div className="slider" ref={sliderRef}>
+        {/* <div className={`slider-container ${isScrolled ? "scrolled" : ""}`}>
+          <div className="slider " ref={sliderRef}>
             {projects.map((project, index) => (
               <ProjectCard project={project} key={index} />
             ))}
           </div>
+        </div> */}
+        <div className="flex items-center gap-4 justify-start flex-nowrap overflow-auto px-[5rem] hide-scrollbar">
+          {projects.map((project, index) => (
+            <ProjectCard project={project} key={index} />
+          ))}
         </div>
       </div>
-        <TransparentPrimaryBtn
-        className="mx-auto mt-16"
-          label={"Explore our Work"}
-          labelClassName={"bg-primary-gradient"}
-          rightIcon={ForwardIcon}
-        />
+      <TransparentPrimaryBtn
+        className="mx-auto mt-16 py-4"
+        label={"Explore our Work"}
+        labelClassName={"bg-primary-gradient"}
+        rightIcon={ForwardIcon}
+      />
     </section>
   );
 }

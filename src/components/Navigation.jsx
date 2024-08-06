@@ -11,7 +11,9 @@ function Navigation() {
       >
         <div className="flex justify-between flex-wrap">
           {/* <div className="flex gap-2 items-center"> */}
-          <img src={Logo} height={32} alt="" />
+          <Link to={"/"} className="flex items-center">
+            <img src={Logo} height={32} alt="" />
+          </Link>
           <ul className="items-center gap-[2.5rem] hidden lg:flex">
             <li>
               <Link className="nav-item" to={"/about-us"}>
@@ -39,7 +41,9 @@ function Navigation() {
               </Link>
             </li>
             <li>
-              <a className="nav-item">Contact Us</a>
+              <Link className="nav-item" to={"/contact-us"}>
+                Contact Us
+              </Link>
             </li>
             <li>
               <Button

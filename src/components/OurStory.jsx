@@ -4,7 +4,9 @@ import OurStoryImage from "../assets/our-story-section-image.svg";
 
 function OurStory() {
   return (
-    <section className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-8 py-[60px]">
+    <div className="lg:max-w-[90%] m-auto">
+
+    <section className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-8 py-[60px] ">
       <div className="bg-[#F5F5F5] rounded-[24px] p-[4rem] md:col-span-8">
         <p className="font-bold text-[32px]">Our Story</p>
         <p className="mt-5">
@@ -27,9 +29,10 @@ function OurStory() {
         />
       </div>
       <div className="md:col-span-4">
-        <img src={OurStoryImage} alt="" />
+        <img src={OurStoryImage} className="w-100" alt="" />
       </div>
     </section>
+    </div>
   );
 }
 

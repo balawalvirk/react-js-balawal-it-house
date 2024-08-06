@@ -1,6 +1,6 @@
 import TeamMember from "./TeamMember";
 
-function DevelopmentTeam() {
+function ProjectManagementTeam() {
   const teamMembers = [
     { name: "Kurt Bates", role: "Full-stack Developer", image: "" },
     { name: "Jerry Helfer", role: "Frontend Developer", image: "" },
@@ -22,11 +22,11 @@ function DevelopmentTeam() {
 
   return (
     <section className="mt-12 text-left">
-      <h1 className="text-[32px] font-bold">Development Team</h1>
+      <h1 className="text-[32px] font-bold">Project Management Team</h1>
       <p className="text-[14px] mt-2 text-left mb-5">
-        Handles the coding and programming of software applications based on
-        project requirements, focusing on functionality and technical
-        implementation.
+        Coordinates project timelines, resources, and budgets to ensure
+        successful delivery, while also managing stakeholder communication and
+        risk mitigation.
       </p>
       <div className="">
         <div className="flex gap-4 flex-nowrap overflow-auto items-center hide-scrollbar">
@@ -39,4 +39,4 @@ function DevelopmentTeam() {
   );
 }
 
-export default DevelopmentTeam;
+export default ProjectManagementTeam;

@@ -1,8 +1,9 @@
-import SearchIcon from "../../assets/search.svg";
-import ProjectImage from "../../assets/project-image.png";
-import ProjectCard from "../../components/ProjectCard";
 import ContactUs from "../../components/ContactUs";
 import DevelopmentTeam from "./DevelopmentTeam";
+import QualityAssuranceTeam from "./QualityAssuranceTeam";
+import ProjectManagementTeam from './ProjectManagementTeam';
+import DesignTeam from "./DesignTeam";
+import TechnicalSupportTeam from './TechnicalSupportTeam';
 
 function index() {
   return (
@@ -18,6 +19,10 @@ function index() {
           thrive.
         </p>
         <DevelopmentTeam />
+        <QualityAssuranceTeam />
+        <ProjectManagementTeam />
+        <DesignTeam />
+        <TechnicalSupportTeam />
         <ContactUs />
       </div>
     </>

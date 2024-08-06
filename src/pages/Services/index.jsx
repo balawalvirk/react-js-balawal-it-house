@@ -11,7 +11,7 @@ import WebDevelopment from "./WebDevelopment";
 function index() {
   return (
     <>
-      <div className="text-center container mx-auto">
+      <div className="text-center container mx-auto px-5">
         <h1 className="text-[40px] font-bold mt-16">
           Digital Solutions Tailored to Your Success
         </h1>

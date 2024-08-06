@@ -4,9 +4,11 @@ import Button from "./Button";
 
 function HeroSection() {
   return (
-    <section className="py-[60px] grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section className="py-[60px] grid grid-cols-1 md:grid-cols-2 gap-4 p-10 md:px-16">
       <div className="flex flex-col justify-center items-start">
-        <h1 className="hero-heading">Transform Your Ideas into Reality</h1>
+        <h1 className="hero-heading text-[30px] md:text-[64px] md:leading-[74px]">
+          Transform Your Ideas into Reality
+        </h1>
         <p style={{ lineHeight: "27px" }} className="font-[400] mt-[2.5rem]">
           Partner with us to bring your app ideas to life. Our expert team is
           dedicated to delivering exceptional results from concept to launch.
