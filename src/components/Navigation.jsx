@@ -1,8 +1,21 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/BITH-Logo.svg";
 import Button from "./Button";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 function Navigation() {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <header>
       <nav
@@ -14,6 +27,61 @@ function Navigation() {
           <Link to={"/"} className="flex items-center">
             <img src={Logo} height={32} alt="" />
           </Link>
+          <MenuIcon className="mt-1 cursor-pointer" onClick={handleClick} />
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "basic-button",
+            }}
+          >
+            <MenuItem>
+              <Link className="nav-item" onClick={handleClose} to={"/about-us"}>
+                About
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link className="nav-item" onClick={handleClose} to={"/services"}>
+                Services
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link
+                className="nav-item"
+                onClick={handleClose}
+                to={"/portfolio"}
+              >
+                Portfolio
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link className="nav-item" onClick={handleClose} to={"/team"}>
+                Team
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link className="nav-item" onClick={handleClose} to={"/articles"}>
+                Articles
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link
+                className="nav-item"
+                onClick={handleClose}
+                to={"/contact-us"}
+              >
+                Contact Us
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Button
+                label={"Get Free Strategy Call"}
+                labelClassName={"text-[14px]"}
+              />
+            </MenuItem>
+          </Menu>
           <ul className="items-center gap-[2.5rem] hidden lg:flex">
             <li>
               <Link className="nav-item" to={"/about-us"}>

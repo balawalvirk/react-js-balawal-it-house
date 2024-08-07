@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function HeroSection() {
   return (
-    <section className="py-[60px] grid grid-cols-1 md:grid-cols-2 gap-4 p-10 md:px-16">
+    <section className="py-[60px] grid grid-cols-1 lg:grid-cols-2 gap-4 p-10 md:px-16">
       <div className="flex flex-col justify-center items-start">
         <h1 className="hero-heading text-[30px] md:text-[64px] md:leading-[74px]">
           Transform Your Ideas into Reality
@@ -23,7 +23,7 @@ function HeroSection() {
           className="mt-[2.5rem]"
         />
       </div>
-      <div>
+      <div className="hidden lg:block">
         <img src={HeroImage} alt="Hero Image" />
       </div>
     </section>
