@@ -8,14 +8,14 @@ function ArticleCard() {
   };
   return (
     <div
-      className="bg-[#F5F5F5] p-[8px] rounded-[24px] ml-10 text-left cursor-pointer project-card"
+      className="bg-[#F5F5F5] p-[8px] rounded-[24px] ml-10 text-left cursor-pointer project-card w-[100%] md:w-[60%] lg:w-[40%]"
       onClick={handleGoToArticleDetails}
       // style={{width:'400px',flexGrow:''}}
     >
       <img
         src={ArticleImage}
-        className="rounded-[16px] article-card-image w-full"
-        height={240}
+        className="rounded-[16px] w-full"
+        // height={240}
         alt=""
       />
       <p className="text-[14px] opacity-75 text-left mt-3">July 8, 2023</p>
