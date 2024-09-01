@@ -17,7 +17,7 @@ function App() {
     <>
       <div className="flex flex-col min-h-screen">
         <Navigation />
-        <div className="flex-grow px-5">
+        <div className="flex-grow">
           <Routes>
             <Route path="/" Component={Home} />
             <Route path="/portfolio" Component={Porfolio} />

@@ -97,7 +97,7 @@ function ContactUs() {
   ];
   return (
     <>
-      <div className="contact-us text-center">
+      <div className="contact-us text-center px-5">
         <div className="font-bold text-[40px] mt-16">
           <h1>Get in Touch</h1>
         </div>
@@ -105,13 +105,13 @@ function ContactUs() {
           Have a question, comment, or need assistance? We’re here to help. Fill
           out the form below and we’ll get back to you as soon as possible.
         </p>
-        <div className="rounded-[24px] p-[8px] bg-[#F5F5F5] mt-10 flex gap-5 container mx-auto">
+        <div className="rounded-[24px] p-[8px] bg-[#F5F5F5] mt-10 flex gap-5 container mx-auto flex-col md:flex-row">
           <img
             src={MapsImage}
             alt=""
             className="w-1/2 inline-block object-cover"
           />
-          <div className="w-1/2 inline-block p-4">
+          <div className="w-full md:w-1/2 inline-block p-4">
             <div className="flex flex-col mt-3">
               <label className="font-[500px] text-[14px] opacity-75">
                 Full Name
@@ -139,7 +139,6 @@ function ContactUs() {
               <textarea
                 name=""
                 id=""
-                cols="30"
                 rows="10"
                 placeholder="What's on your mind?"
                 className="contact-us-form-input resize-none"
@@ -162,7 +161,7 @@ function ContactUs() {
           </div>
         </div>
         <div className="flex items-center flex-col sm:flex-row gap-14 mt-32 container mx-auto">
-          <div className="rounded-[16px] p-[24px] bg-[#F5F5F5] relative flex-grow">
+          <div className="rounded-[16px] w-full p-[24px] bg-[#F5F5F5] relative flex-grow">
             <img
               src={PhoneIconWithBg}
               alt=""
@@ -177,7 +176,7 @@ function ContactUs() {
             <p className="font-bold pt-[3rem]">Call Us Now</p>
             <p className="text-[18px]">+92 333 4444 555</p>
           </div>
-          <div className="rounded-[16px] p-[24px] bg-[#F5F5F5] relative flex-grow">
+          <div className="rounded-[16px] w-full p-[24px] bg-[#F5F5F5] relative flex-grow">
             <img
               src={EmailIconWithBg}
               alt=""
@@ -192,7 +191,7 @@ function ContactUs() {
             <p className="font-bold pt-[3rem]">Send Us a Mail</p>
             <p className="text-[18px]">example@gmail.com</p>
           </div>
-          <div className="rounded-[16px] p-[24px] bg-[#F5F5F5] relative flex-grow">
+          <div className="rounded-[16px] w-full p-[24px] bg-[#F5F5F5] relative flex-grow">
             <img
               src={LocationIconWithBg}
               alt=""

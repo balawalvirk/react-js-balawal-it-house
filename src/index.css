@@ -101,7 +101,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 64px;
+  /* font-size: 64px; */
   font-weight: bold;
   align-self: center;
 }
@@ -115,6 +115,7 @@ body {
   border: 1px solid #c5c5c5;
   border-radius: 18px;
   padding: 16px;
+  width: 100%;
   font-size: 18px;
 }
 
@@ -182,4 +183,14 @@ label {
 
 .project .project-description {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.menu-icon {
+  display: none !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu-icon {
+    display: block !important;
+  }
 }

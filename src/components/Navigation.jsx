@@ -27,7 +27,10 @@ function Navigation() {
           <Link to={"/"} className="flex items-center">
             <img src={Logo} height={32} alt="" />
           </Link>
-          <MenuIcon className="mt-1 cursor-pointer" onClick={handleClick} />
+          <MenuIcon
+            className="mt-1 cursor-pointer menu-icon"
+            onClick={handleClick}
+          />
           <Menu
             id="basic-menu"
             anchorEl={anchorEl}

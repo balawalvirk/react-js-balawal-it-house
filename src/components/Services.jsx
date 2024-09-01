@@ -61,27 +61,26 @@ function Services() {
   ];
 
   return (
-    <section className="py-[60px] text-center  lg:max-w-[90%]  mx-auto">
+    <section className="py-[60px] text-center  lg:max-w-[90%]  mx-auto px-5">
       <h1 className="font-semibold text-[40px]">Our Services</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-20 justify-items-center mt-16">
-      {services.map((service) => (
-    <div className="text-center" key={service.title}>
-      <img
-        src={service.image}
-        alt=""
-        className="mx-auto"
-        height={72}
-        width={72}
-      />
-      <p className="font-bold text-[24px] mt-3">{service.title}</p>
-      <p className="text-[14px] mt-3 opac75">{service.description}</p>
-      <p className="flex items-center gap-3 justify-center mt-3 font-[500] bg-primary-gradient">
-        Learn More <img src={LearnMoreArrowIcon} alt="" />
-      </p>
-    </div>
-  ))}
-</div>
-
+        {services.map((service) => (
+          <div className="text-center" key={service.title}>
+            <img
+              src={service.image}
+              alt=""
+              className="mx-auto"
+              height={72}
+              width={72}
+            />
+            <p className="font-bold text-[24px] mt-3">{service.title}</p>
+            <p className="text-[14px] mt-3 opac75">{service.description}</p>
+            <p className="flex items-center gap-3 justify-center mt-3 font-[500] bg-primary-gradient">
+              Learn More <img src={LearnMoreArrowIcon} alt="" />
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

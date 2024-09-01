@@ -4,11 +4,11 @@ import Button from "./Button";
 
 const ContactUs = () => {
   return (
-    <section className="pt-[120px] container mx-auto">
+    <section className="pt-[120px] container mx-auto px-5">
       <h1 className="font-bold text-[40px] text-center">
         Book a Free 30-Minute Strategy Call & a Free First Update
       </h1>
-      <div className="mt-16 bg-[#F5F5F5] rounded-[24px] p-[8px] flex gap-4 items-center">
+      <div className="mt-16 bg-[#F5F5F5] rounded-[24px] p-[8px] flex gap-4 items-center w-fit">
         <img src={ContactUsImage} alt="" className="hidden md:block" />
         <div className="py-3">
           <p className="text-[18px] font-[400] text-left">
@@ -68,7 +68,6 @@ const ContactUs = () => {
               <textarea
                 name=""
                 id=""
-                cols="30"
                 rows="10"
                 placeholder="What's on your mind?"
                 className="contact-us-form-input resize-none"

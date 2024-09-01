@@ -8,7 +8,7 @@ import TechnicalSupportTeam from './TechnicalSupportTeam';
 function index() {
   return (
     <>
-      <div className="text-center container mx-auto">
+      <div className="text-center container mx-auto px-5">
         <h1 className="text-[40px] font-bold mt-16">Meet Our Dedicated Team</h1>
         <p className="text-[18px] mt-5">
           Get to know the talented individuals behind our company. Our team is

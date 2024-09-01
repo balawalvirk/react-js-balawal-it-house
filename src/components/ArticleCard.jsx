@@ -8,7 +8,7 @@ function ArticleCard() {
   };
   return (
     <div
-      className="bg-[#F5F5F5] p-[8px] rounded-[24px] ml-10 text-left cursor-pointer project-card w-[100%] md:w-[60%] lg:w-[40%]"
+      className="bg-[#F5F5F5] p-[8px] rounded-[24px] ml-10 text-left cursor-pointer project-card basis-[100%] md:basis-[50%] lg:basis-[30%]"
       onClick={handleGoToArticleDetails}
       // style={{width:'400px',flexGrow:''}}
     >

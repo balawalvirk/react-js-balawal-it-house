@@ -10,11 +10,16 @@ function ProjectCard({ project }) {
         alt=""
       />
       <div className="p-5">
-        <p className="font-bold text-[24px] py-3 text-left">{project.title}</p>
+        <p
+          className="font-bold text-[24px] py-3 text-left"
+          style={{ wordWrap: "break-word" }}
+        >
+          {project.title}
+        </p>
         <p className="text-[16px] opacity-75 font-[400] pb-3 text-left">
           {project.description}
         </p>
-        <div className="flex items-center gap-4 justify-start">
+        <div className="flex items-center gap-4 justify-start flex-wrap">
           {project.tags?.map((tag, index) => (
             <p className="py-[12px] px-[10px] rounded-[48px] bg-white font-[500] text-[12px]">
               {tag}

@@ -28,7 +28,7 @@ function index() {
           <input
             type="text"
             placeholder="Search a project..."
-            className="bg-transparent border-none outline-none p-[1rem] text-[18px]"
+            className="bg-transparent border-none outline-none p-[1rem] text-[18px] sm:w-[400px]"
           />
         </div>
         <UXUIDesign />

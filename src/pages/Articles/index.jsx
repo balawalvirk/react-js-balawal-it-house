@@ -6,8 +6,10 @@ function Articles() {
   return (
     <>
       <div className="text-center container mx-auto">
-        <h1 className="text-[40px] font-bold mt-16">Explore Our Articles</h1>
-        <p className="text-[18px] mt-5">
+        <h1 className="text-[40px] font-bold mt-16 px-5">
+          Explore Our Articles
+        </h1>
+        <p className="text-[18px] mt-5 px-5">
           Welcome to our collection of articles, where we share
           easy-to-understand insights about digital topics. Whether you're a
           business owner, developer, or just curious about technology, our
@@ -23,10 +25,10 @@ function Articles() {
           <input
             type="text"
             placeholder="Search a project..."
-            className="bg-transparent border-none outline-none p-[1rem] text-[18px]"
+            className="bg-transparent border-none outline-none p-[1rem] text-[18px] sm:w-[400px]"
           />
         </div>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
+        <div className="mt-10 flex flex-wrap gap-10 justify-center">
           {Array.from({ length: 11 }).map((project, ind) => (
             <ArticleCard key={ind} />
           ))}

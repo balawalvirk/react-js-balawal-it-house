@@ -6,7 +6,7 @@ import ContactUs from '../../components/ContactUs';
 function AboutUs() {
   return (
     <>
-      <div className="text-center container mx-auto">
+      <div className="text-center container mx-auto px-5">
         <h1 className="text-[40px] font-bold mt-16">About Balawal IT House</h1>
         <p className="text-[18px] mt-5">
           At Balawal IT House, we're more than just a team of developers and
@@ -29,12 +29,12 @@ function AboutUs() {
             </p>
           </div>
           <div>
-            <img src={OurMissionImage} alt="" className="ml-auto" />
+            <img src={OurMissionImage} alt="" className="ml-auto w-full" />
           </div>
         </section>
         <section className="flex flex-col-reverse md:flex-row gap-8 py-[60px] items-center">
           <div>
-            <img src={OurValuesImage} alt="" className="mr-auto" />
+            <img src={OurValuesImage} alt="" className="mr-auto w-full" />
           </div>
           <div className="text-left">
             <p className="font-bold text-[24px]">Our Values</p>
@@ -106,7 +106,7 @@ function AboutUs() {
             </ul>
           </div>
           <div>
-            <img src={WhyChooseUsImage} alt="" className="ml-auto" />
+            <img src={WhyChooseUsImage} alt="" className="ml-auto w-full" />
           </div>
         </section>
         <ContactUs />
